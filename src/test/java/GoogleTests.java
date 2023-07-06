@@ -10,7 +10,7 @@ public class GoogleTests {
 
     @BeforeEach
     void setUp() {
-        WebDriverManager.chromedriver().driverVersion("114").setup();
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
