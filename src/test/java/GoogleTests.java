@@ -29,7 +29,12 @@ public class GoogleTests {
     }
 
     @Test
-    void test() {
+    void test1() {
+        open("https://www.google.com");
+    }
+
+    @Test
+    void test2() {
         open("https://www.google.com");
     }
 }
