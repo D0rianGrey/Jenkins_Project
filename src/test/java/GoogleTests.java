@@ -37,4 +37,9 @@ public class GoogleTests {
     void test2() {
         open("https://www.google.com");
     }
+
+    @Test
+    void test3() {
+        open("https://www.google.com");
+    }
 }
