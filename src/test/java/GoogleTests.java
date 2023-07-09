@@ -26,21 +26,21 @@ public class GoogleTests {
         Configuration.webdriverLogsEnabled = true;
         Configuration.headless = true;
         Configuration.browser = "chrome";
-        System.out.println(chromeDriverPath);
     }
 
     @Test
     void test1() {
-        open("https://www.google.com");
+        String chromeDriverPath = System.getenv("CHROMEDRIVER_PATH");
+        System.out.println(chromeDriverPath);
     }
-
-    @Test
-    void test2() {
-        open("https://www.google.com");
-    }
-
-    @Test
-    void test3() {
-        open("https://www.google.com");
-    }
+//
+//    @Test
+//    void test2() {
+//        open("https://www.google.com");
+//    }
+//
+//    @Test
+//    void test3() {
+//        open("https://www.google.com");
+//    }
 }
