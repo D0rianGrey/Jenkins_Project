@@ -26,6 +26,7 @@ public class GoogleTests {
         Configuration.webdriverLogsEnabled = true;
         Configuration.headless = true;
         Configuration.browser = "chrome";
+        System.out.println(chromeDriverPath);
     }
 
     @Test
