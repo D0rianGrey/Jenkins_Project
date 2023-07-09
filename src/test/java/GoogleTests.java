@@ -10,7 +10,7 @@ public class GoogleTests {
 
     @BeforeEach
     void setUp() {
-        var chromeDriverPath = System.getenv("CHROMEDRIVER_PATH");
+        String chromeDriverPath = System.getenv("CHROMEDRIVER_PATH");
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
