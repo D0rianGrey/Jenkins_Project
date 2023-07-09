@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,6 +23,7 @@ public class GoogleTests {
 //        Configuration.webdriverLogsEnabled = true;
 //        Configuration.headless = true;
         System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER_PATH"));
+        Configuration.browser = "chrome";
     }
 
     @Test
