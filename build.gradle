@@ -25,3 +25,9 @@ jar {
         attributes 'Main-Class': 'org.example.Main'
     }
 }
+
+task stage(dependsOn: ['clean', 'build']) {
+    doLast {
+        println 'Staging the application...'
+    }
+}

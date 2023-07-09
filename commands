@@ -4,3 +4,5 @@ gradle wrapper     - to create a new gradle wrapper
 ./gradlew build
 ./gradlew --version
 
+ git push heroku master
+
