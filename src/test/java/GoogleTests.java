@@ -1,7 +1,5 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -48,7 +46,10 @@ public class GoogleTests {
 //        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 //        ChromeDriver driver = new ChromeDriver(options);
 //        driver.get("https://www.google.com");
-        WebDriverManager.chromedriver().setup();
+        String chromeDriverPath = System.getenv("CHROMEDRIVER_PATH");
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+        Configuration.browser = "chrome";
+        Configuration.headless = true;
         open("https://www.google.com");
     }
 }
