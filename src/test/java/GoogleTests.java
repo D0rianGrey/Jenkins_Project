@@ -42,6 +42,7 @@ public class GoogleTests {
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
         options.setBinary(chromeDriverPath);
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         ChromeDriver driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
     }
