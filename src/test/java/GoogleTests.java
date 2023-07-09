@@ -30,17 +30,6 @@ public class GoogleTests {
 
     @Test
     void test1() {
-        String chromeDriverPath = System.getenv("CHROMEDRIVER_PATH");
-        System.out.println(chromeDriverPath);
+        open("https://www.google.com");
     }
-//
-//    @Test
-//    void test2() {
-//        open("https://www.google.com");
-//    }
-//
-//    @Test
-//    void test3() {
-//        open("https://www.google.com");
-//    }
 }
